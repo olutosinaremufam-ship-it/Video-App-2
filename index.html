@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Black & Blue Media App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Media App</h1>
+
+    <!-- Upload Video -->
+    <input type="file" id="videoUpload" accept="video/*" />
+    <video id="videoPlayer" controls></video>
+    <button onclick="deleteVideo()">Delete Video</button>
+
+    <!-- Record Video -->
+    <button onclick="startRecording()">Start Recording</button>
+    <button onclick="stopRecording()">Stop Recording</button>
+
+    <!-- Take Picture -->
+    <video id="cameraFeed" autoplay muted></video>
+    <button onclick="takePicture()">Take Picture</button>
+    <canvas id="snapshotCanvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
